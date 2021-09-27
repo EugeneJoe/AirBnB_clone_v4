@@ -32,10 +32,8 @@ $(function() {
     contentType: 'application/json',
     data: "{}",
     success: (data) => {
-      console.log(data);
       $(".places").empty();
       $.each(data, (i, place) => {
-        console.log(place);
         let sectionPlace = `
         <article>
         <div class="title_box">
